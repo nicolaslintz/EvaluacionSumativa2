@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<style>
+    body {
+        background-color: aqua;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+        overflow: hidden;
+        background-color: darkcyan;
+    }
+    nav a {
+        float: right;
+        display: block;
+        color: cyan;
+        text-align: center;
+        padding: 30px 25px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: darkcyan;
+        background-color: lightsteelblue;
+    }
+    div.gallery{
+        margin: 5px;
+        border: 3px solid #ccc;
+        float: left;
+        width: 180px;
+    }
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+    main {
+        padding: 30px 70px;
+        text-align: center;
+    }
+
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="DatosPersonales.html">Datos Personales</a>
+        <a href="Razas.html">Razas de Perros</a>
+    </nav>
+    <main>
+        <h2>Galeria de Fotos</h2>
+        <hr>
+    </main>
+    <div class="Galeria de fotos">
+        <a target="_blank" href="perros1.jpg">
+            <img src="perros1.jpg" alt="perros lindos" width="400" height="400">
+        </a>
+        <div class="desc">Perros que son muy lindos!</div>
+    </div>
+
+    <div class="Galeria de fotos">
+        <a target="_blank" href="perros2.jpg">
+            <img src="perros2.jpg" alt="perros tiernos" width="400" height="400">
+        </a>
+        <div class="desc">Perros que tiernos!</div>
+    </div>
+
+    <div class="Galeria de fotos">
+        <a target="_blank" href="perrosamigos.jpg">
+            <img src="perrosamigos.jpg" alt="perros amigos" width="400" height="400">
+        </a>
+        <div class="desc">Perros que son amigos!</div>
+    </div>
+</body>
+</html>

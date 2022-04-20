@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {
+        background-color: aqua;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+        overflow: hidden;
+        background-color: darkcyan;
+    }
+    nav a {
+        float: right;
+        display: block;
+        color: cyan;
+        text-align: center;
+        padding: 20px 25px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: darkcyan;
+        background-color: lightsteelblue;
+    }
+    h1 {
+        text-align: center;
+    }
+    input[type=text], select{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+     width: 100%;
+     background-color: #4CAF50;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+    }
+
+     input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+     div {
+       border-radius: 5px;
+       background-color: #f2f2f2;
+    padding: 20px;
+    }
+
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="galeriadefotos.html">Galeria de fotos</a>
+        <a href="Razas.html">Razas de Perros</a>
+    </nav>
+    <header>
+        <h1 style="border: 2px solid darkcyan;">Formulario de Contacto</h1>
+    </header>
+    <div>
+        <form action="/action_page.php">
+            <label for="pnom">Primer nombre</label>
+            <input type="text" id="pnom" name="Primer Nombre" placeholder="Tu Nombre...">
+
+            <label for="pape">Apellido</label>
+            <input type="text" id="pape" name="Apellido" placeholder="Tu Apellido...">
+        
+            <label for="fdn">Fecha de Nacimiento</label>
+            <input type="text" id="fdn" name="Fecha de Nacimiento" placeholder="Tu Fecha de Nacimiento...">
+            
+            </select>
+          
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+</body>
+</html>
