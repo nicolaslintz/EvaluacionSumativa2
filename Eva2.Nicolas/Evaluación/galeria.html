@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/galeria.css">
+    <title>Galería</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="detalles.html">Detalles</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div>
+        <h2>Galeria de imagenes</h2>
+        <hr>
+        <div id="galeria" class="container">
+            <div class="miniatura" style="background-image: url(Imagenes/vibora.jpg);" onclick="abrirModal('Imagenes/vibora.jpg')"></div>
+            <div class="miniatura" style="background-image: url(Imagenes/vibora2.jpg);" onclick="abrirModal('Imagenes/vibora2.jpg')"></div>
+            <div class="miniatura" style="background-image: url(Imagenes/vibora3.jpg);" onclick="abrirModal('Imagenes/vibora3.jpg')"></div>
+            <div class="miniatura" style="background-image: url(Imagenes/vibora4.jpg);" onclick="abrirModal('Imagenes/vibora4.jpg')"></div>
+            <div class="miniatura" style="background-image: url(Imagenes/vibora5.jpg);" onclick="abrirModal('Imagenes/vibora5.jpg')"></div>
+            <p>(clicl izquierdo sobre la imagen)</p>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <div class="modal-contenido">
+                <img id="imagen-modal" src="">
+            </div>
+        </div>
+        <script>
+            function abrirModal(imagen) {
+			document.getElementById("imagen-modal").src = imagen;
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function cerrarModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+        </script>
+    </div>
+    <footer>
+        <p>Nicolas Lintz <br>
+            nicolas.lintz@inacapmail.cl <br>
+            <a target="_blank" href="https://www.google.cl/maps/place/Valdivia,+Los+R%C3%ADos/@-39.8312865,-73.825266,9z/data=!3m1!4b1!4m6!3m5!1s0x9615e94f20de4501:0x89b7301051537813!8m2!3d-39.8176676!4d-73.2425892!16s%2Fg%2F122qxpwq">Valdivia, Chile</a> &copy;2023</p>
+    </footer>
+</body>
+</html>
